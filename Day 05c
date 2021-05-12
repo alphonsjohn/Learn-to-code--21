@@ -1,13 +1,41 @@
-// Write a C Program to print "Hello World!" and "Welcome to Learn To Code!" in two separate lines
+// Write a C Program to perform Read and Print operations using the four basic data types in C. (int, float, char & double)
 
 #include <stdio.h>
+
 #include <string.h>
+
 #include <math.h>
+
 #include <stdlib.h>
 
 int main() {
-printf("Hello World!\n");
-       printf("Welcome to Learn To Code!\n");
+
+    char a;
+
+    int b;
+
+    float c;
+
+    double d;
+
+    scanf("%c",&a);
+
+    scanf("%d",&b);
+
+    scanf("%f",&c);
+
+    scanf("%lf",&d);
+
+    printf ("%c\n",a);
+
+   printf("%d\n",b);
+
+    printf("%f\n",c);
+
+    printf ("%lf\n",d);
+
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+
     return 0;
+
 }
