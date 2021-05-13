@@ -1,0 +1,29 @@
+//Write a C Program to read an integer and find it's square root.
+
+#include <stdio.h>
+
+#include <string.h>
+
+#include <math.h>
+
+#include <stdlib.h>
+
+int main() {
+
+    int number;
+
+    double result;
+
+    scanf("%d",& number);
+
+    result = sqrt(number);
+
+    printf("%.1lf",result);
+
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+
+    return 0;
+
+}
