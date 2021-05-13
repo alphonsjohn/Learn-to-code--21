@@ -1,0 +1,43 @@
+//Write a C Program to perform all four basic Mathematical Operations on two numbers taken from user input.
+
+#include <stdio.h>
+
+#include <string.h>
+
+#include <math.h>
+
+#include <stdlib.h>
+
+int main() {
+
+    int num1,num2;
+
+    int sum,sub,mult;
+
+    float div;
+
+    scanf("%d %d", &num1, &num2); 
+
+    //printf("%d\n %d\n",num1,num2 );
+
+    sum = num1+ num2;
+
+    sub = num1-num2;
+
+    mult= num1*num2;
+
+    div= (float)num1/num2;
+
+    printf("%d\n",sum);
+
+    printf("%d\n",sub);
+
+    printf("%d\n",mult);
+
+    printf("%.2f\n",div);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+
+    return 0;
+
+}
