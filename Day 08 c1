@@ -1,0 +1,43 @@
+//Write a C Program to identify if a number is a palindrome or not.
+
+#include <stdio.h>
+
+#include <string.h>
+
+#include <math.h>
+
+#include <stdlib.h>
+
+int main() {
+
+    int n,r,sum=0,temp;
+
+     scanf("%d",&n);
+
+    temp=n;
+
+      while (n>0)
+
+    {
+
+      r=n%10;
+
+       sum=(sum*10)+r;
+
+        n=n/10;
+
+            }
+
+    if(temp==sum)
+
+        printf("Yes");
+
+    else
+
+        printf("No");
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+
+    return 0;
+
+}
