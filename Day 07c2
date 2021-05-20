@@ -1,0 +1,83 @@
+//Write a C Program to display a calculator with a menu consisting of each operation to perform on the numbers using Switch Case statement.
+
+#include <stdio.h>
+
+#include <string.h>
+
+#include <math.h>
+
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+
+    int a,b,choice;
+
+    scanf("%d%d%d", &choice, &a, &b);
+
+   
+
+    printf("1.Addition\n2.Subtraction\n3.Multiplication\n4.Division");
+
+   
+
+   
+
+    switch(choice)
+
+    {
+
+        case 1:
+
+            printf("\n%d", a+b);
+
+            break;
+
+        case 2:
+
+            printf("\n%d",a-b);
+
+            break;
+
+       case 3:
+
+            printf("\n%d",a*b);
+
+            break;
+
+        case 4:
+
+           if (a==0||b==0)
+
+       printf("\nCannot be determined");
+
+    else{
+
+       float div;
+
+        
+
+       div =(a/b);
+
+        printf("\n%lf",div);}
+
+            
+
+            break;
+
+     
+
+        default:
+
+            printf("\nerror");
+
+            
+
+    }
+
+    
+
+    return 0;
+
+}
