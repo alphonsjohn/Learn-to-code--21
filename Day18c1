@@ -1,0 +1,26 @@
+//Write a C program to swap the values of two variables.
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+void swap(int*,int*);
+
+int main() {
+    int x,y;
+    scanf("%d%d",&x,&y);
+    printf("a=%d b=%d\n",x,y);
+    swap(&x, &y);
+    printf("a=%d b=%d",x,y);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+void swap(int *a, int *b)
+{
+   int t;
+
+   t  = *b;
+   *b = *a;
+   *a = t;
+}
