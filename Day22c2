@@ -1,0 +1,35 @@
+//Write a C program that reads and displays details of 4 students. The 'structure' should contain the RollNo(int), FirstName(string) and marks(float).
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+    struct student {
+       char FirstName[50];
+        int RollNo;
+         float Marks;
+        } ;
+int main() {
+          struct student s[5];
+        int i ;
+        for(i=0;i<4;i++) {
+        scanf("%d",&s[i].RollNo);
+         
+        scanf("%s",s[i].FirstName);
+        
+        scanf("%f",&s[i].Marks); }
+        
+        for(i=0; i<4; i++) {
+        printf("DETAILS OF ROLLNO");
+            printf(" %d\n",s[i].RollNo);
+        printf("NAME: ");
+            printf("%s\n",s[i].FirstName);  
+        printf("MARKS: ");
+        
+        
+        printf("%.2f\n",s[i].Marks); }
+    
+    
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
