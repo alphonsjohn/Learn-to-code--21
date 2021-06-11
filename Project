@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+struct student {
+       char Name[50];
+        int No,age;
+         float Marks;
+        } ;
+int main() {
+          struct student s[100];
+        int i,n ;
+        printf(" ENTER THE NUMBER OF  STUDENTS:");
+        scanf("%d\n",&n);
+        printf("%d",n);
+        //storing information
+        for(i=0;i<n;i++) {
+        scanf("%d",&s[i].No);
+        scanf("%s",s[i].Name);
+        scanf("%d",&s[i].age);
+        scanf("%f",&s[i].Marks); 
+        
+        }
+        //displaying information
+        for(i=0; i<n; i++) {
+        printf("\nSTUDENT NO:");
+            printf(" %d\n",s[i].No);
+        printf("NAME: ");
+            printf("%s\n",s[i].Name);  
+            printf("AGE:");
+            printf("%d\n",s[i].age);
+        printf("MARKS: ");
+        printf("%.2f\n",s[i].Marks);  
+        //check the Student is pass or fail
+        if (s[i].Marks<70)printf("fail\n");
+        else printf("pass\n");}
+     
+    
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+/*model input
+5
+1 Vikram 17 100
+2 honey 18 90
+3 vishnu 17 60
+4 pranavu 17 80
+5 jeven 17 80 */
